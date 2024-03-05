@@ -37,6 +37,10 @@ module SolidusGlobalize
       def spree_base_scopes
         super.includes(:translations).references(:translations)
       end
+
+      def ransackable_attributes(*_args)
+        authorizable_ransackable_attributes
+      end
     end
   end
 end
