@@ -9,3 +9,5 @@ require 'solidus_globalize/engine'
 require 'deface'
 require 'solidus_globalize/configuration'
 require 'solidus_globalize/fallbacks'
+
+require 'patches/attribute_methods/serialization'
