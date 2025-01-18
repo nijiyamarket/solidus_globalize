@@ -3,8 +3,7 @@
 module SolidusGlobalize
   module AttributeMethods
     module Serialization
-      def serialize(attr_name, coder: nil, type: Object, yaml: {}, **options)
-        options[:coder] = coder if coder
+      def serialize(attr_name, type: Object, **options)
         options[:type] = type if type
 
         super(attr_name, **options)
